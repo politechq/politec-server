@@ -1,0 +1,53 @@
+{
+  "name": "politec-server",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Azat S. <to@azat.io>",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "lint": "eslint . --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@babel/core": "7.10.5",
+    "@babel/node": "7.10.5",
+    "@babel/plugin-proposal-decorators": "7.10.5",
+    "@babel/plugin-proposal-throw-expressions": "7.10.4",
+    "@babel/preset-env": "7.10.4",
+    "@babel/register": "7.10.5",
+    "@graphql-tools/schema": "6.0.14",
+    "apollo-server": "2.15.1",
+    "apollo-server-express": "2.15.1",
+    "babel-plugin-module-resolver": "4.0.0",
+    "bcrypt": "5.0.0",
+    "cookie-parser": "1.4.5",
+    "cors": "2.8.5",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "gm": "1.23.1",
+    "graphql": "15.3.0",
+    "graphql-resolvers": "0.4.2",
+    "graphql-scalars": "1.2.2",
+    "jsonwebtoken": "8.5.1",
+    "nanoid": "3.1.10",
+    "nodemon": "2.0.4",
+    "pg": "8.3.0",
+    "ramda": "0.27.0",
+    "ramda-adjunct": "2.27.0",
+    "ramda-extension": "0.10.3",
+    "sequelize": "6.3.3"
+  },
+  "devDependencies": {
+    "eslint": "7.4.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-import-resolver-babel-module": "5.1.2",
+    "eslint-plugin-fp": "2.3.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-ramda": "2.5.1",
+    "husky": "4.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  }
+}

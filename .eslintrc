@@ -1,0 +1,56 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "globals": {
+    "localStorage": true,
+    "fetch": true
+  },
+  "plugins": [
+    "fp"
+  ],
+  "rules": {
+    "arrow-parens": ["error", "as-needed"],
+    "fp/no-arguments": "error",
+    "fp/no-class": "error",
+    "fp/no-delete": "error",
+    "fp/no-events": "error",
+    "fp/no-get-set": "error",
+    "fp/no-let": "error",
+    "fp/no-loops": "error",
+    "fp/no-mutating-assign": "error",
+    "fp/no-mutating-methods": "error",
+    "fp/no-mutation": ["error", {
+      "exceptions": [{
+        "property": "associate"
+      }]
+    }],
+    "fp/no-nil": "off",
+    "fp/no-proxy": "error",
+    "fp/no-rest-parameters": "off",
+    "fp/no-this": "error",
+    "fp/no-throw": "error",
+    "fp/no-unused-expression": "off",
+    "fp/no-valueof-field": "error",
+    "function-paren-newline": "off",
+    "implicit-arrow-linebreak": "off",
+    "no-confusing-arrow": "off",
+    "no-console": "off",
+    "no-var": "error",
+    "object-curly-newline": "off",
+    "operator-linebreak": "off",
+    "semi": ["error", "never"]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": [
+          "node_modules",
+          "src"
+        ]
+      }
+    }
+  }
+}

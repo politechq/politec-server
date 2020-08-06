@@ -1,0 +1,3 @@
+const USER_DELETED = 'USER_DELETED'
+
+export default USER_DELETED
